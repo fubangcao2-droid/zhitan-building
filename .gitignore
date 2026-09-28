@@ -1,0 +1,13 @@
+﻿.venv/
+node_modules/
+__pycache__/
+*.pyc
+data/building_db.sqlite
+data/building_db.sqlite-*
+.pnpm-store/
+.tmp/
+tmp/
+artifacts/
+report/*.pdf
+report/*.pptx
+report/*.mp4

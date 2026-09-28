@@ -1,0 +1,10 @@
+# 节能建议后端依赖（与 ml/requirements.txt 分开管理，训练环境不需要装这些）
+#
+# 安装：
+#   .\.venv\Scripts\python.exe -m pip install -r server\requirements.txt
+fastapi==0.141.1
+uvicorn==0.53.0
+python-multipart==0.0.32
+# csv_ingest.py 用 pandas 解析上传的 CSV；api.py 启动时无条件 import 它，
+# 所以缺这一行整个服务都起不来，而不只是上传接口失效。版本与 ml/requirements.txt 对齐。
+pandas==2.2.3
